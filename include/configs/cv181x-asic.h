@@ -227,7 +227,7 @@
 			    #define ROOTARGSB "ubi.mtd=ROOTFS_B ubi.block=0,0"
 			#endif
 		#endif /* CONFIG_SKIP_RAMDISK */
-	#elif defined(CONFIG_SD_BOOT)
+	#elif defined(CONFIG_SD_BOOT) || defined(CONFIG_EMMC_SUPPORT)
 		#define ROOTARGS "root=" ROOTFS_DEV " rootwait rw"
 	#elif defined(CONFIG_EMMC_SUPPORT)
 		#ifdef CONFIG_ROOTFS_RW
