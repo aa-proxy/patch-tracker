@@ -1,0 +1,1 @@
+/app/external/board/milkv-duos/u-boot/cvi_board_init.c
