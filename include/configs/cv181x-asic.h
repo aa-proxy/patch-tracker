@@ -228,10 +228,10 @@
 			#endif
 		#endif /* CONFIG_SKIP_RAMDISK */
 	#elif defined(CONFIG_SD_BOOT) || defined(CONFIG_EMMC_SUPPORT)
-		#define ROOTARGS "root=" ROOTFS_DEV " rootwait rw"
+		#define ROOTARGS "root=" ROOTFS_DEV " rootwait ro"
 	#elif defined(CONFIG_EMMC_SUPPORT)
 		#ifdef CONFIG_ROOTFS_RW
-			#define ROOTARGS "rootfstype=ext4 rootwait rw root=" ROOTFS_DEV
+			#define ROOTARGS "rootfstype=ext4 rootwait ro root=" ROOTFS_DEV
 		#else
 			#define ROOTARGS "rootfstype=squashfs rootwait ro root=" ROOTFS_DEV
 		#endif
