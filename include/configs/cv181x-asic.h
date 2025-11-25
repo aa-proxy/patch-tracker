@@ -258,7 +258,7 @@
 		#define EARLYCON_RELEASE   " "
 	#endif
 
-	#define OTHERBOOTARGS   "earlycon=sbi riscv.fwsz="  __stringify(CVIMMAP_OPENSBI_SIZE) " " \
+	#define OTHERBOOTARGS   "init=/etc/overlay_init earlycon=sbi riscv.fwsz="  __stringify(CVIMMAP_OPENSBI_SIZE) " " \
 		EARLYCON_RELEASE CONSOLE_LOGLEVEL
 
 	/* config mtdids */
